@@ -53,9 +53,10 @@ public class Ejercicios07 {
 	//Ej07
 //	Método que reciba una cadena y retorne el número de vocales que contiene.
 	public static int cuentaVocales(String cad) {
+		cad = cad.toLowerCase();
 		int cant = 0;
 		for (int i = 0; i < cad.length(); i++) {
-			if("aeiou".contains("" + cad.toLowerCase().charAt(i)))
+			if("aeiou".contains("" + cad.charAt(i)))
 				cant++;
 		}
 		return cant;
@@ -524,6 +525,7 @@ public class Ejercicios07 {
 		//Test07
 //		System.out.println(cuentaVocales("murcielago"));
 //		System.out.println(cuentaVocales("MURCIELAGO"));
+//		System.out.println(cuentaVocales("albañil"));
 		
 		//Test08
 //		System.out.println(invierte("Hola que tal"));
